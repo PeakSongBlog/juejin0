@@ -1,8 +1,14 @@
 package blog.peaksong.demo0
 
-class Car {
+class Car(num1: String) {
+
+    private var num: String
 
     init {
-        print("I'm a car")
+        this.num = num1
+    }
+
+    override fun toString(): String {
+        return "I'm car $num"
     }
 }
